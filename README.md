@@ -39,7 +39,7 @@ cd ..
 **Hint:**<br/>
 In Arch Linux, just replace the first line (`apt install...`) in the instructions above with following 2 lines:
 ```
-pacman -Sy base-devel git linux-headers zlib android-tools
+pacman -S base-devel git linux-headers zlib android-tools
 echo "/usr/local/lib" > /etc/ld.so.conf.d/usrlocal.conf
 ```
 
