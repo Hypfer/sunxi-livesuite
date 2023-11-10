@@ -6,7 +6,7 @@ This repository is a fork of the [https://github.com/linux-sunxi/sunxi-livesuite
 This readme assumes that you have just installed a fresh copy of [Debian Bookworm](https://www.debian.org/releases/bookworm/) with some kind of GUI (e.g. KDE).
 Commands may vary based on your Linux-Distribution. I **strongly** recommend a fresh install for this to not taint your main one.
 
-Ubuntu is known to cause problems. Just use Debian, really. It's the superior OS anyway.
+Arch Linux should work, too (Instructions for Arch Linux are further below). Ubuntu is known to cause problems. Just use Debian, really. It's the superior OS anyway.
 
 **Hint:**<br/>
 If you're using a recent-ish computer for this, make sure that `Secure Boot` is disabled in the BIOS or else the kernel
@@ -34,6 +34,13 @@ make install
 cd ..
 
 ./LiveSuit.sh
+```
+
+**Hint:**<br/>
+In Arch Linux, just replace the first line (`apt install...`) in the instructions above with following 2 lines:
+```
+pacman -Sy base-devel git linux-headers zlib android-tools
+echo "/usr/local/lib" > /etc/ld.so.conf.d/usrlocal.conf
 ```
 
 The last command should leave you with an open LiveSuit GUI window looking similar to this:
